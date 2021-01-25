@@ -17,7 +17,7 @@ public class AdminRestController {
         this.adminService = adminService;
     }
 
-    @CrossOrigin(origins = "https://demo-0523.herokuapp.com")
+    @CrossOrigin(origins = "http://localhost:3000")
     @PostMapping("/addAdmin")
     public Admin addEmployee(@RequestBody Admin admin) {
         admin.setId(0);
